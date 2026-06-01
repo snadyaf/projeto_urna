@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eleição Felina 2026</title>
+<link rel="stylesheet" href="style.css">
+<script src="main.js" defer></script>
+</head>
+<body>
+
+<div id="welcome" class="screen">
+
+  <div class="window">
+    <h1>🐱 ELEIÇÃO FELINA 2026</h1>
+    <h2>Conselho Supremo dos Gatos</h2>
+
+    <p>Escolha o próximo líder felino.</p>
+
+    <button id="btnStart">
+      🗳️ INICIAR VOTAÇÃO
+    </button>
+  </div>
+
+</div>
+
+<div id="voting" class="screen hidden">
+
+  <div class="window voting-window">
+
+    <div class="candidates">
+
+      <div id="candidateCard" class="candidate-card">
+
+        <div class="emoji">🐾</div>
+
+        <h2>Escolha um candidato</h2>
+
+        <p>Clique em 1 ou 2.</p>
+
+      </div>
+
+</div>
+
+    <div class="keyboard">
+
+      <button class="vote-btn" data-vote="1">
+        <img src="sirmeianoite.jpg" alt="">
+      </button>
+
+      <button class="vote-btn" data-vote="2">
+        <img src="laranjinha.jpg" alt="">
+      </button>
+
+      <button id="btnCorrige" class="orange">
+        CORRIGE
+      </button>
+
+      <button id="btnConfirma" class="green">
+        CONFIRMA
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div id="result" class="screen hidden">
+
+  <div class="window result-window">
+
+    <h1>🏆 VENCEDOR</h1>
+
+    <div id="winnerEmoji" class="winner-emoji">
+      🐱
+    </div>
+
+    <h2 id="winnerName">
+      —
+    </h2>
+
+    <div class="vote-stats">
+
+  <h3>📊 Apuração</h3>
+
+  <p>
+    🐈 Laranjinha do Caos:
+    <strong id="votesCat1">0</strong> votos
+  </p>
+
+  <p>
+    🐈‍⬛ Sir Meia-Noite:
+    <strong id="votesCat2">0</strong> votos
+  </p>
+
+  <p>
+    🗳️ Total:
+    <strong id="votesTotal">0</strong> votos
+  </p>
+
+</div>
+
+    <button onclick="location.reload()">
+      🔄 Nova votação
+    </button>
+
+  </div>
+
+</div>
+
+</body>
+</html>
